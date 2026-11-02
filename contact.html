@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 | Q系列产品</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-autumn-100: #f8f4ec;
+      --color-autumn-200: #e9e2d5;
+      --color-caramel: #b46b3e;
+      --color-olive: #5c6b4f;
+      --color-brown-dark: #443b32;
+    }
+  </style>
+</head>
+<body class="bg-autumn-100 text-brown-dark font-sans">
+<!-- 导航 -->
+<header class="sticky top-0 z-50 bg-autumn-100/90 backdrop-blur border-b border-autumn-200">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 text-[1.35rem] font-semibold text-caramel">
+      <img
+              src="./img/logo.png"
+              alt="Logo"
+              class="h-8 w-auto object-contain [filter:sepia(0.6)_saturate(1.2)_brightness(0.85)_contrast(1.1)]"
+      />
+      Chameleon
+    </a>
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html" class="text-caramel font-medium">首页</a>
+      <a href="products.html" class="hover:text-caramel transition-colors">产品</a>
+      <a href="about.html" class="hover:text-caramel transition-colors">关于我们</a>
+      <a href="author.html" class="hover:text-caramel transition-colors">作者介绍</a>
+      <a href="contact.html" class="hover:text-caramel transition-colors">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-4 py-16">
+  <h1 class="text-2xl font-bold mb-8">联系我们</h1>
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-white rounded-xl p-6 shadow-sm">
+      <form>
+        <div class="mb-4">
+          <label class="block text-sm mb-1">姓名</label>
+          <input type="text" class="w-full px-3 py-2 border border-autumn-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-caramel">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm mb-1">邮箱</label>
+          <input type="email" class="w-full px-3 py-2 border border-autumn-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-caramel">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm mb-1">留言内容</label>
+          <textarea rows="4" class="w-full px-3 py-2 border border-autumn-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-caramel"></textarea>
+        </div>
+        <button type="submit" class="w-full py-2.5 bg-caramel text-white rounded-lg hover:bg-caramel/90 transition">提交</button>
+      </form>
+    </div>
+    <div>
+      <div class="bg-white rounded-xl p-6 shadow-sm">
+        <h3 class="font-semibold mb-4">联系方式</h3>
+        <div class="space-y-3 text-sm text-brown-dark/80">
+          <p>📧 Email:1211884772@qq.com</p>
+          <p>💬 WeChat: mumuago</p>
+          <p>💬 Github: https://github.com/mumu-architect/ChameleonWeb</p>
+          <p>📍 Address: 西安</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="border-t border-autumn-200 mt-12 py-8 text-center text-sm text-brown-dark/60">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-[0.8rem]">© 2026 Chameleon系列开源产品</div>
+    <div class="text-[0.6rem]">WeChat: mumuago | Email:1211884772@qq.com</div>
+  </div>
+</footer>
+</body>
+</html>

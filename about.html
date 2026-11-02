@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们 | Q系列产品</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-autumn-100: #f8f4ec;
+      --color-autumn-200: #e9e2d5;
+      --color-caramel: #b46b3e;
+      --color-olive: #5c6b4f;
+      --color-brown-dark: #443b32;
+    }
+  </style>
+</head>
+<body class="bg-autumn-100 text-brown-dark font-sans">
+<!-- 导航 -->
+<header class="sticky top-0 z-50 bg-autumn-100/90 backdrop-blur border-b border-autumn-200">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 text-[1.35rem] font-semibold text-caramel">
+      <img
+              src="./img/logo.png"
+              alt="Logo"
+              class="h-8 w-auto object-contain [filter:sepia(0.6)_saturate(1.2)_brightness(0.85)_contrast(1.1)]"
+      />
+      Chameleon
+    </a>
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html" class="text-caramel font-medium">首页</a>
+      <a href="products.html" class="hover:text-caramel transition-colors">产品</a>
+      <a href="about.html" class="hover:text-caramel transition-colors">关于我们</a>
+      <a href="author.html" class="hover:text-caramel transition-colors">作者介绍</a>
+      <a href="contact.html" class="hover:text-caramel transition-colors">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-16">
+  <div class="text-center mb-12">
+    <h1 class="text-2xl font-bold">关于我们</h1>
+    <p class="mt-2 text-olive">自研技术团队，专注 QPHP / QFS / ChameleonUI 生态建设</p>
+  </div>
+
+  <!-- 6人团队卡片网格 -->
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- 成员1 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <img src="https://picsum.photos/id/64/600/400" alt="成员" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold">创始人</h3>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">PHP</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">Go</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">SolidJS</span>
+        </div>
+        <p class="mt-3 text-sm text-brown-dark/70 leading-relaxed">
+          架构负责人，主导 QPHP、QFS、ChameleonUI 整体设计，深耕底层自研与性能优化。
+        </p>
+      </div>
+    </div>
+
+    <!-- 成员2 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <img src="https://picsum.photos/id/65/600/400" alt="成员" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold">后端工程师</h3>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">Go</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">存储</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">分布式</span>
+        </div>
+        <p class="mt-3 text-sm text-brown-dark/70 leading-relaxed">
+          负责 QFS 分布式文件系统开发，副本策略、分片、断点续传模块维护。
+        </p>
+      </div>
+    </div>
+
+    <!-- 成员3 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <img src="https://picsum.photos/id/66/600/400" alt="成员" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold">前端工程师</h3>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">SolidJS</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">TailwindCSS4</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">组件库</span>
+        </div>
+        <p class="mt-3 text-sm text-brown-dark/70 leading-relaxed">
+          ChameleonUI 组件开发，表单、弹窗、菜单、Tooltip、Toast 交互组件实现。
+        </p>
+      </div>
+    </div>
+
+    <!-- 成员4 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <img src="https://picsum.photos/id/67/600/400" alt="成员" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold">PHP 开发工程师</h3>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">PHP</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">MVC</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">ORM</span>
+        </div>
+        <p class="mt-3 text-sm text-brown-dark/70 leading-relaxed">
+          维护 QPHP MVC 框架，路由、协程、数据库ORM、中间件模块迭代。
+        </p>
+      </div>
+    </div>
+
+    <!-- 成员5 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <img src="https://picsum.photos/id/68/600/400" alt="成员" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold">测试工程师</h3>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">单元测试</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">E2E</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">兼容性</span>
+        </div>
+        <p class="mt-3 text-sm text-brown-dark/70 leading-relaxed">
+          负责三大产品功能、边界、兼容性测试，文档校验与回归测试。
+        </p>
+      </div>
+    </div>
+
+    <!-- 成员6 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <img src="https://picsum.photos/id/69/600/400" alt="成员" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold">文档&运营</h3>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">技术文档</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">示例Demo</span>
+          <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">社区</span>
+        </div>
+        <p class="mt-3 text-sm text-brown-dark/70 leading-relaxed">
+          编写用户手册、API文档、示例工程，维护开源社区交流。
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="border-t border-autumn-200 mt-12 py-8 text-center text-sm text-brown-dark/60">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-[0.8rem]">© 2026 Chameleon系列开源产品</div>
+    <div class="text-[0.6rem]">WeChat: mumuago | Email:1211884772@qq.com</div>
+  </div>
+</footer>
+</body>
+</html>

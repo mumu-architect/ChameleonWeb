@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作者介绍 | Q系列产品</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-autumn-100: #f8f4ec;
+      --color-autumn-200: #e9e2d5;
+      --color-caramel: #b46b3e;
+      --color-olive: #5c6b4f;
+      --color-brown-dark: #443b32;
+    }
+  </style>
+</head>
+<body class="bg-autumn-100 text-brown-dark font-sans">
+<!-- 导航 -->
+<header class="sticky top-0 z-50 bg-autumn-100/90 backdrop-blur border-b border-autumn-200">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 text-[1.35rem] font-semibold text-caramel">
+      <img
+              src="./img/logo.png"
+              alt="Logo"
+              class="h-8 w-auto object-contain [filter:sepia(0.6)_saturate(1.2)_brightness(0.85)_contrast(1.1)]"
+      />
+      Chameleon
+    </a>
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html" class="text-caramel font-medium">首页</a>
+      <a href="products.html" class="hover:text-caramel transition-colors">产品</a>
+      <a href="about.html" class="hover:text-caramel transition-colors">关于我们</a>
+      <a href="author.html" class="hover:text-caramel transition-colors">作者介绍</a>
+      <a href="contact.html" class="hover:text-caramel transition-colors">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-4 py-16">
+  <div class="grid md:grid-cols-3 gap-8">
+    <div>
+      <img src="https://picsum.photos/id/64/500/600" alt="作者" class="w-full rounded-xl shadow-sm">
+    </div>
+    <div class="md:col-span-2">
+      <h1 class="text-2xl font-bold">作者</h1>
+      <p class="mt-2 text-olive">架构师 / 开源自研</p>
+      <div class="mt-6 space-y-3 text-brown-dark/80">
+        <p>十余年后端、前端架构研发经验，深耕 PHP、Go、SolidJS。</p>
+        <p>自研 QPHP MVC、QFS 分布式文件系统、ChameleonUI 组件库。</p>
+        <p>偏好可控、轻量、工程化方案，专注底层与业务落地。</p>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-2">
+        <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">PHP</span>
+        <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">Go</span>
+        <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">SolidJS</span>
+        <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">TailwindCSS4</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="border-t border-autumn-200 mt-12 py-8 text-center text-sm text-brown-dark/60">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-[0.8rem]">© 2026 Chameleon系列开源产品</div>
+    <div class="text-[0.6rem]">WeChat: mumuago | Email:1211884772@qq.com</div>
+  </div>
+</footer>
+</body>
+</html>

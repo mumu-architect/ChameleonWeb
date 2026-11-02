@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品 | QPHP · QFS · ChameleonUI</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-autumn-100: #f8f4ec;
+            --color-autumn-200: #e9e2d5;
+            --color-caramel: #b46b3e;
+            --color-olive: #5c6b4f;
+            --color-brown-dark: #443b32;
+        }
+    </style>
+</head>
+<body class="bg-autumn-100 text-brown-dark font-sans">
+<!-- 导航 -->
+<header class="sticky top-0 z-50 bg-autumn-100/90 backdrop-blur border-b border-autumn-200">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 text-[1.35rem] font-semibold text-caramel">
+            <img
+                    src="./img/logo.png"
+                    alt="Logo"
+                    class="h-8 w-auto object-contain [filter:sepia(0.6)_saturate(1.2)_brightness(0.85)_contrast(1.1)]"
+            />
+            Chameleon
+        </a>
+        <nav class="flex gap-6 text-sm">
+            <a href="index.html" class="text-caramel font-medium">首页</a>
+            <a href="products.html" class="hover:text-caramel transition-colors">产品</a>
+            <a href="about.html" class="hover:text-caramel transition-colors">关于我们</a>
+            <a href="author.html" class="hover:text-caramel transition-colors">作者介绍</a>
+            <a href="contact.html" class="hover:text-caramel transition-colors">联系我们</a>
+        </nav>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-2xl font-bold mb-2">全部产品</h1>
+    <p class="text-olive mb-10">自研技术套件，面向架构师与开发团队</p>
+    <div class="grid md:grid-cols-3 gap-6">
+        <a href="product-detail.html" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+            <img src="https://picsum.photos/id/180/600/320" alt="QPHP" class="w-full h-44 object-cover group-hover:scale-105 duration-300">
+            <div class="p-5">
+                <h3 class="text-lg font-semibold">QPHP MVC 框架</h3>
+                <p class="mt-2 text-sm text-brown-dark/70">高性能自研PHP MVC框架，支持协程、路由、ORM，适合中后台与接口服务开发。</p>
+            </div>
+        </a>
+        <a href="product-detail.html" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+            <img src="https://picsum.photos/id/119/600/320" alt="QFS" class="w-full h-44 object-cover group-hover:scale-105 duration-300">
+            <div class="p-5">
+                <h3 class="text-lg font-semibold">QFS 分布式文件系统</h3>
+                <p class="mt-2 text-sm text-brown-dark/70">轻量分布式存储，分片、副本、断点续传，适配私有部署文件业务。</p>
+            </div>
+        </a>
+        <a href="product-detail.html" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+            <img src="https://picsum.photos/id/21/600/320" alt="ChameleonUI" class="w-full h-44 object-cover group-hover:scale-105 duration-300">
+            <div class="p-5">
+                <h3 class="text-lg font-semibold">ChameleonUI</h3>
+                <p class="mt-2 text-sm text-brown-dark/70">SolidJS + TailwindCSS4组件库，表单、弹窗、菜单、Toast等成套业务组件。</p>
+            </div>
+        </a>
+    </div>
+</main>
+
+<footer class="border-t border-autumn-200 mt-12 py-8 text-center text-sm text-brown-dark/60">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-[0.8rem]">© 2026 Chameleon系列开源产品</div>
+        <div class="text-[0.6rem]">WeChat: mumuago | Email:1211884772@qq.com</div>
+    </div>
+</footer>
+</body>
+</html>

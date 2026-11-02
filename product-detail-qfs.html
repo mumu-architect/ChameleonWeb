@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChameleonUI | 产品详情</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-autumn-100: #f8f4ec;
+            --color-autumn-200: #e9e2d5;
+            --color-caramel: #b46b3e;
+            --color-olive: #5c6b4f;
+            --color-brown-dark: #443b32;
+        }
+    </style>
+</head>
+<body class="bg-autumn-100 text-brown-dark font-sans">
+<!-- 导航 -->
+<header class="sticky top-0 z-50 bg-autumn-100/90 backdrop-blur border-b border-autumn-200">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 text-[1.35rem] font-semibold text-caramel">
+            <img
+                    src="./img/logo.png"
+                    alt="Logo"
+                    class="h-8 w-auto object-contain [filter:sepia(0.6)_saturate(1.2)_brightness(0.85)_contrast(1.1)]"
+            />
+            Chameleon
+        </a>
+        <nav class="flex gap-6 text-sm">
+            <a href="index.html" class="hover:text-caramel transition-colors">首页</a>
+            <a href="products.html" class="text-caramel font-medium">产品</a>
+            <a href="about.html" class="hover:text-caramel transition-colors">关于我们</a>
+            <a href="author.html" class="hover:text-caramel transition-colors">创始人介绍</a>
+            <a href="contact.html" class="hover:text-caramel transition-colors">联系我们</a>
+        </nav>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-16">
+    <a href="products.html" class="text-caramel hover:underline text-sm">← 返回产品列表</a>
+    <div class="grid md:grid-cols-5 gap-10 mt-6">
+        <div class="md:col-span-3">
+            <img src="https://picsum.photos/id/22/1000/600" alt="QFS分布式文件存储系统" class="w-full rounded-xl shadow-sm">
+        </div>
+        <div class="md:col-span-2">
+            <h1 class="text-2xl font-bold">QFS分布式文件存储系统</h1>
+            <p class="mt-3 text-olive">轻量分布式存储，分片、副本、断点续传，适配私有部署文件业务。</p>
+            <div class="mt-6 space-y-3 text-sm text-brown-dark/80">
+                <p>✅ 基于 dragonboat v4 + wal 底层</p>
+                <p>✅ 1.高可用，每个小集群都是1主2从，leader挂自动选新的leader</p>
+                <p>✅ 2.安全，文件分别存在3台节点上，数据不会丢失，主从文件同步，数据落盘</p>
+                <p>✅ 3.大量数据或文件存储，使用槽位分片技术把文件存到不同的小集群中，可以存储大量数据</p>
+                <p>✅ 4.上传客户端使用qfsSDK进行文件上传</p>
+                <p>✅ 5.扩容还没开发，缩容计划不会开发</p>
+                <p>✅ 6.系统安全性还待开发，系统扩展性待优化，系统性能待优化</p>
+            </div>
+            <div class="mt-8 flex gap-3">
+                <button class="px-5 py-2 bg-caramel text-white rounded-lg hover:bg-caramel/90 transition">查看文档</button>
+                <a href="https://github.com/mumu-architect/QFS">
+                <button class="px-5 py-2 border border-autumn-200 rounded-lg hover:bg-white transition">Github</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-20">
+        <h2 class="text-xl font-bold mb-4">产品介绍</h2>
+        <div class="bg-white rounded-xl p-6 shadow-sm text-brown-dark/80 leading-relaxed">
+            <p>QFS 是一个开源的高性能分布式文件系统。 它的主要功能包括：文件存储，文件同步和文件访问，以及高容量和负载平衡。主要解决了海量数据存储问题，特别适合以中小文件（建议范围：1MB < file_size <500MB）为载体的在线服务。</p>
+        </div>
+    </section>
+</main>
+
+<footer class="border-t border-autumn-200 mt-12 py-8 text-center text-sm text-brown-dark/60">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-[0.8rem]">© 2026 Chameleon系列开源产品</div>
+        <div class="text-[0.6rem]">WeChat: mumuago | Email:1211884772@qq.com</div>
+    </div>
+</footer>
+</body>
+</html>

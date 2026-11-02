@@ -32,25 +32,26 @@
             <a href="index.html" class="text-caramel font-medium">首页</a>
             <a href="products.html" class="hover:text-caramel transition-colors">产品</a>
             <a href="about.html" class="hover:text-caramel transition-colors">关于我们</a>
-            <a href="author.html" class="hover:text-caramel transition-colors">作者介绍</a>
+            <a href="author.html" class="hover:text-caramel transition-colors">创始人介绍</a>
             <a href="contact.html" class="hover:text-caramel transition-colors">联系我们</a>
         </nav>
     </div>
 </header>
 
 <main>
+
     <!-- Hero 带秋日背景图 + 柔光遮罩 -->
-    <section class="relative max-w-full px-4 py-24 overflow-hidden">
-        <div class="absolute inset-0 -z-10">
-            <img src="https://picsum.photos/id/1035/1920/800"  alt="秋日背景" class="w-full h-full object-cover">
+    <section class="relative max-w-full px-4 py-50 overflow-hidden">
+        <div class="max-w-6xl mx-auto absolute inset-0 -z-10">
+            <img src="./img/hero-bg.jpg"  alt="秋日背景" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-autumn-100/70"></div>
         </div>
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-6xl mx-auto " >
             <h1 class="text-[clamp(2rem,5vw,3.2rem)] font-bold text-brown-dark leading-tight">
                 简约稳定的自研技术套件
             </h1>
             <p class="mt-4 text-lg text-olive max-w-2xl">
-                QPHP MVC框架、QFS分布式文件系统、ChameleonUI SolidJS组件库，一套面向架构师的工程化工具。
+                ChameleonUI 组件库、QFS分布式文件存储系统、QPHP MVC框架，一套面向架构师的工程化产品。
             </p>
             <a href="products.html" class="inline-block mt-8 px-5 py-2.5 bg-caramel text-white rounded-lg hover:bg-caramel/90 transition">
                 查看全部产品
@@ -62,12 +63,12 @@
     <section class="max-w-6xl mx-auto px-4 py-16">
         <h2 class="text-2xl font-bold mb-10">产品矩阵</h2>
         <div class="grid md:grid-cols-3 gap-6">
-            <!-- QPHP -->
+            <!-- ChameleonUI -->
             <a href="product-detail.html" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                <img src="https://picsum.photos/id/180/600/320" alt="QPHP" class="w-full h-44 object-cover group-hover:scale-105 duration-300">
+                <img src="https://picsum.photos/id/21/600/320" alt="ChameleonUI" class="w-full h-44 object-cover group-hover:scale-105 duration-300">
                 <div class="p-5">
-                    <h3 class="text-lg font-semibold">QPHP MVC 框架</h3>
-                    <p class="mt-2 text-sm text-brown-dark/70">高性能自研PHP MVC框架，支持协程、路由、ORM，适合中后台与接口服务开发。</p>
+                    <h3 class="text-lg font-semibold">ChameleonUI</h3>
+                    <p class="mt-2 text-sm text-brown-dark/70">SolidJS + TailwindCSS4组件库，表单、弹窗、菜单、Toast等成套业务组件。</p>
                 </div>
             </a>
             <!-- QFS -->
@@ -78,12 +79,12 @@
                     <p class="mt-2 text-sm text-brown-dark/70">轻量分布式存储，分片、副本、断点续传，适配私有部署文件业务。</p>
                 </div>
             </a>
-            <!-- ChameleonUI -->
+            <!-- QPHP -->
             <a href="product-detail.html" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                <img src="https://picsum.photos/id/21/600/320" alt="ChameleonUI" class="w-full h-44 object-cover group-hover:scale-105 duration-300">
+                <img src="https://picsum.photos/id/180/600/320" alt="QPHP" class="w-full h-44 object-cover group-hover:scale-105 duration-300">
                 <div class="p-5">
-                    <h3 class="text-lg font-semibold">ChameleonUI</h3>
-                    <p class="mt-2 text-sm text-brown-dark/70">SolidJS + TailwindCSS4组件库，表单、弹窗、菜单、Toast等成套业务组件。</p>
+                    <h3 class="text-lg font-semibold">QPHP MVC 框架</h3>
+                    <p class="mt-2 text-sm text-brown-dark/70">高性能自研PHP MVC框架，支持协程、路由、ORM，适合中后台与接口服务开发。</p>
                 </div>
             </a>
         </div>
@@ -106,11 +107,14 @@
     <!-- 作者简介摘要 -->
     <section class="max-w-6xl mx-auto px-4 py-16 border-t border-autumn-200">
         <div class="grid md:grid-cols-2 gap-10 items-center">
-            <img src="https://picsum.photos/id/64/700/400" alt="author" class="rounded-xl shadow-sm order-2 md:order-1">
+            <img src="./img/author_index.png" alt="author" class="w-full h-72 rounded-xl shadow-sm order-2 md:order-1">
             <div class="order-1 md:order-2">
-                <h2 class="text-2xl font-bold mb-4">作者介绍</h2>
+                <h2 class="text-2xl font-bold mb-4">创始人介绍</h2>
                 <p class="text-brown-dark/80 leading-relaxed">
-                    十余年后端+前端架构经验，深耕PHP、Go、SolidJS，自研多款底层系统，偏向工程落地与性能优化。
+                    十余年后端+前端架构经验，深耕C++、GO、PHP、Java、Javascript、Python 自研多款底层系统，偏向工程落地与性能优化。
+                </p>
+                <p class="text-caramel text-[0.8rem]">
+                    创始人WeChat: mumuago | 创始人Email: 1211884772@qq.com
                 </p>
                 <a href="author.html" class="inline-block mt-5 text-caramel hover:underline">查看详情 →</a>
             </div>
@@ -122,7 +126,7 @@
         <div class="bg-white rounded-xl p-8 shadow-sm text-center">
             <h2 class="text-2xl font-bold mb-3">想要交流或者合作？</h2>
             <p class="text-brown-dark/70 mb-6">欢迎联系我们，技术交流、项目合作均可</p>
-            <p class="text-brown-dark/70 mb-6">WeChat: mumuago Email: 1211884772@qq.com</p>
+            <p class="text-brown-dark/70 mb-6">WeChat: mumuago | Email: 1211884772@qq.com</p>
             <a href="contact.html" class="px-5 py-2.5 bg-caramel text-white rounded-lg hover:bg-caramel/90 transition">联系我们</a>
         </div>
     </section>

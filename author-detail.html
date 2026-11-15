@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChameleonUI | 产品详情</title>
+    <script src="./css/tailwindcss@4.js"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-autumn-100: #f8f4ec;
+            --color-autumn-200: #e9e2d5;
+            --color-caramel: #b46b3e;
+            --color-olive: #5c6b4f;
+            --color-brown-dark: #443b32;
+        }
+    </style>
+</head>
+<body class="bg-autumn-100 text-brown-dark font-sans">
+<!-- 导航 -->
+<header class="sticky top-0 z-50 bg-autumn-100/90 backdrop-blur border-b border-autumn-200">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 text-[1.35rem] font-semibold text-caramel">
+            <img
+                    src="./img/logo.png"
+                    alt="Logo"
+                    class="h-8 w-auto object-contain [filter:sepia(0.6)_saturate(1.2)_brightness(0.85)_contrast(1.1)]"
+            />
+            Chameleon
+        </a>
+        <!-- 桌面默认：gap-6 text-sm；手机自动压缩，保证单行 -->
+        <nav class="flex gap-6 text-sm sm:gap-6 sm:text-sm max-sm:gap-2 max-sm:text-[0.68rem]">
+            <a href="index.html" class="hover:text-caramel transition-colors">首页</a>
+            <a href="products.html" class="hover:text-caramel transition-colors">产品</a>
+            <a href="about.html" class="hover:text-caramel transition-colors">关于我们</a>
+            <a href="author.html" class="text-caramel font-medium">创始人</a>
+            <a href="contact.html" class="hover:text-caramel transition-colors">联系我们</a>
+        </nav>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-16">
+    <a href="author.html" class="text-caramel hover:underline text-sm">← 返回创始人列表</a>
+    <div class="grid md:grid-cols-5 gap-10 mt-6">
+        <div class="md:col-span-3">
+            <img src="./img/author.jpg" alt="ChameleonUI" class="w-full rounded-xl shadow-sm">
+        </div>
+        <div class="md:col-span-2">
+            <h1 class="text-2xl font-bold">创始人：王伟</h1>
+            <p class="mt-3 text-olive">架构师 / 开源框架自研 / 自研底层框架</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">C++</span>
+                <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">Go</span>
+                <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">PHP</span>
+                <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">Java</span>
+                <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">Javascript</span>
+                <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">Python</span>
+                <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">SolidJS</span>
+                <span class="px-2.5 py-1 bg-autumn-200 rounded text-xs">TailwindCSS4</span>
+            </div>
+            <div class="mt-6 text-brown-dark/80 text-[0.8rem]">
+                <p class="leading-[2] text-brown-dark/70 ">
+                1.十余年后端、前端架构研发经验，深耕 C++、GO、PHP、java、Javascript、Python。<br/>
+                2.自研 ChameleonUI 组件库 、QFS分布式文件存储系统、QPHP MVC框架。<br/>
+                3.开源Ai框架 LangGraph、FastMCP、Agent、Milvus 开发ChameleonAi。<br/>
+                4.熟练开源框架 SolidJS2、TailwindCSS4、Java生态、Thinkphp。<br/>
+                5.偏好可控、轻量、工程化方案，专注底层与业务落地。<br/>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-20">
+        <h2 class="text-xl font-bold mb-4">介绍</h2>
+        <div class="bg-white rounded-xl p-6 shadow-sm text-brown-dark/80 leading-relaxed">
+            <p>历经十年心劫，
+                读过千本书，我对人性，已看得透彻：<br/><br/>
+
+                人性本无善恶，自私与趋利，唯求生而已。<br/><br/>
+
+                善与道德，是教化与环境的结果；<br/>
+                自私与趋利，是底层本能。<br/>
+                平常日子，可温良、可共情、可付出；<br/>
+                极端绝境，先自保、不苛责、不伪善。<br/><br/>
+
+                一块馒头分两半，共活，是家人；<br/>
+                半块馒头自保而活，是人性；<br/>
+                舍己予人，是圣人。<br/>
+
+                我不神化道德，不贬低人性，懂底线，知冷暖，惜真情。<br/><br/>
+
+                人生三关：<br/>
+                淡钱能赚，重情不困，惜生不畏。<br/><br/>
+
+                人生四态：<br/>
+                人生苦短，必须性感；<br/>
+                人生如戏，全凭演技；<br/>
+                醉卧温柔，醒掌乾坤；<br/>
+                皇图霸业谈笑中，不如人生一场醉。<br/>
+
+                活着的意义：<br/>
+                不为虚名枷锁，只为幸福、享受、心安。<br/>
+                入世从容，出世通透，此生尽兴，不负自己。<br/><br/>
+
+                真正成熟的人：<br/>
+                敢为自己做决定，敢为结果买单，敢守住自己的边界，不需要任何人批准自己的人生。<br/>
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="border-t border-autumn-200 mt-12 py-8 text-center text-sm text-brown-dark/60">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-[0.8rem]">© 2026 Chameleon系列开源产品</div>
+        <div class="text-[0.6rem]">WeChat: mumuago | Email:1211884772@qq.com</div>
+    </div>
+</footer>
+</body>
+</html>

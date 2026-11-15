@@ -61,9 +61,18 @@
     </section>
 
     <!-- 产品矩阵 -->
-    <section class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-2xl font-bold mb-10">产品矩阵</h2>
-        <div class="grid md:grid-cols-3 gap-6">
+    <section class="max-w-6xl mx-auto px-4 py-16 border-t border-autumn-200">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <img src="https://imgapi.cn/api.php?w=600&h=320&seed=9" alt="products" class="w-full rounded-xl shadow-sm order-2 md:order-1">
+            <div class="order-1 md:order-2">
+                <h2 class="text-2xl font-bold mb-4">产品</h2>
+                <p class="text-brown-dark/80 leading-relaxed">
+                    自研技术套件，面向架构师与开发团队,自研多款底层系统，偏向工程落地与性能优化。
+                </p>
+                <a href="products.html" class="inline-block mt-5 text-caramel hover:underline">查看产品 →</a>
+            </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             <!-- ChameleonUI -->
             <a href="product-detail.html" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
                 <img src="https://imgapi.cn/api.php?w=600&h=320&seed=10" alt="ChameleonUI" class="w-full h-44 object-cover group-hover:scale-105 duration-300">
@@ -161,16 +170,71 @@
     <!-- 作者简介摘要 -->
     <section class="max-w-6xl mx-auto px-4 py-16 border-t border-autumn-200">
         <div class="grid md:grid-cols-2 gap-10 items-center">
-            <img src="./img/author.jpg" alt="author" class="w-full rounded-xl shadow-sm order-2 md:order-1">
+            <img src="https://imgapi.cn/api.php?w=600&h=320&seed=45" alt="author" class="w-full rounded-xl shadow-sm order-2 md:order-1">
             <div class="order-1 md:order-2">
-                <h2 class="text-2xl font-bold mb-4">创始人介绍</h2>
+                <h2 class="text-2xl font-bold mb-4">创始人</h2>
                 <p class="text-brown-dark/80 leading-relaxed">
                     十余年后端+前端架构经验，深耕C++、GO、PHP、Java、Javascript、Python 自研多款底层系统，偏向工程落地与性能优化。
                 </p>
-                <p class="text-caramel text-[0.8rem]">
-                    创始人WeChat: mumuago | 创始人Email: 1211884772@qq.com
-                </p>
                 <a href="author.html" class="inline-block mt-5 text-caramel hover:underline">查看详情 →</a>
+            </div>
+        </div>
+        <!-- 6人创始人卡片网格 -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <!-- 成员1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="./img/author.jpg" alt="成员" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-semibold">架构师: 王伟</h3>
+                    <p class="mt-2 text-olive text-xs">架构师 / 开源框架自研 / 自研底层框架</p>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">C++</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">Go</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">PHP</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">Java</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">Javascript</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">Python</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">Rust</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">C</span>
+                    </div>
+                    <p class="mt-3 text-[0.76rem] text-brown-dark/70 leading-relaxed">
+                        架构负责人，主导 ChameleonUI、QFS分布式文件存储系统、 QPHP MVC框架、 整体设计，深耕底层自研与性能优化。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 成员2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://imgapi.cn/api.php?w=600&h=320&seed=46" alt="成员" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-semibold">联合创始人：招募中...</h3>
+                    <p class="mt-2 text-olive  text-xs">架构师 / 开源框架自研 </p>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">Go</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">存储</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">分布式</span>
+                    </div>
+                    <p class="mt-3 text-[0.76rem] text-brown-dark/70 leading-relaxed">
+                        负责 QFS 分布式文件系统开发，副本策略、分片、断点续传模块维护。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 成员3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://imgapi.cn/api.php?w=600&h=320&seed=47" alt="成员" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-semibold">联合创始人：招募中...</h3>
+                    <p class="mt-2 text-olive text-xs">架构师 / 开源框架自研 </p>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">SolidJS</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">TailwindCSS4</span>
+                        <span class="px-2 py-0.5 bg-autumn-200 rounded text-xs">组件库</span>
+                    </div>
+                    <p class="mt-3 text-[0.76rem] text-brown-dark/70 leading-relaxed">
+                        ChameleonUI 组件开发，表单、弹窗、菜单、Tooltip、Toast 交互组件实现。
+                    </p>
+                </div>
             </div>
         </div>
     </section>
